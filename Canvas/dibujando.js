@@ -1,0 +1,72 @@
+var d = document.getElementById("dibujo");
+var lienzo = d.getContext("2d");
+
+dibujarLinea ("black", 20, 10 , 60, 60);
+dibujarLinea ("black", 60, 60 , 150, 60 );
+dibujarLinea ("black", 150, 60 , 180, 10 );
+dibujarLinea ("black", 150, 60 , 200, 100 );
+dibujarLinea ("black", 5, 100 , 60 , 60 );
+dibujarLinea ("black", 20, 10 , 7 ,50  );
+dibujarLinea ("black", 7, 50 , 5, 100 );
+dibujarLinea ("black", 180, 10 , 195 ,50 );
+dibujarLinea ("black", 195, 50 , 200 , 100 );
+dibujarLinea ("black", 180, 10 , 175, 80 );
+dibujarLinea ("black", 20, 10 , 30 , 83 );
+dibujarLinea ("black", 5 , 100 , 1, 130 );
+dibujarLinea ("black", 200 , 100 , 210, 130 );
+dibujarLinea ("black", 210 ,130 , 200, 180 );
+dibujarLinea ("black", 200, 180 , 170, 210 );
+dibujarLinea ("black", 170, 210 , 150, 220 );
+dibujarLinea ("black", 1, 130 , 10 , 170 );
+dibujarLinea ("black", 10, 170 , 45, 210 );
+dibujarLinea ("black", 45, 210 , 70 , 220 );
+dibujarLinea ("black", 70, 220 , 150, 220 );
+dibujarLinea ("black", 150, 60 , 140, 120 );
+dibujarLinea ("black", 140, 120 , 200, 100 );
+dibujarLinea ("black", 140, 120 , 175, 80 );
+dibujarLinea ("black", 60, 120 , 60, 60 );
+dibujarLinea ("black", 60, 120 , 5, 100 );
+dibujarLinea ("black", 60, 120 , 30, 83 );
+dibujarLinea ("black", 3, 120 , 30, 130 );
+dibujarLinea ("black", 30, 130 , 60, 120 );
+dibujarLinea ("black", 60, 120 , 80, 125 );
+dibujarLinea ("black", 80, 125 , 90, 140 );
+dibujarLinea ("black", 90, 140 , 85, 150 );
+dibujarLinea ("black", 70, 152 , 85 , 150 );
+dibujarLinea ("black", 140, 120 , 120, 125 );
+dibujarLinea ("black", 120, 125 , 110, 140 );
+dibujarLinea ("black",110, 140 , 115, 150 );
+dibujarLinea ("black", 115, 150 , 130, 152 );
+dibujarLinea ("black", 206, 120 , 175, 130 )
+dibujarLinea ("black", 130, 152 , 150, 145 );
+dibujarLinea ("black", 150, 145 , 175, 130 );
+dibujarLinea ("black", 140, 120 , 175, 130 );
+dibujarLinea ("black", 70, 152 , 50, 145 );
+dibujarLinea ("black", 50, 145 , 30, 130 );
+dibujarLinea ("black", 100, 60 , 90, 140 );
+dibujarLinea ("black", 100, 60 , 110, 140 );
+dibujarLinea ("black", 85, 150 , 95, 170 );
+dibujarLinea ("black", 115, 150 , 105, 170 );
+dibujarLinea ("black", 95, 170 , 98, 167 );
+dibujarLinea ("black", 105, 170 , 102, 167 );
+dibujarLinea ("black", 100, 170 , 102, 167 );
+dibujarLinea ("black", 100, 170 , 98, 167 );
+dibujarLinea ("black", 100, 177 , 105, 170 );
+dibujarLinea ("black", 100, 177 , 95, 170 );
+dibujarLinea ("black", 100, 177 , 100, 190 );
+dibujarLinea ("black", 100, 190 , 110, 200 );
+dibujarLinea ("black", 100, 190 , 90, 200 );
+dibujarLinea ("black", 110, 200 , 120, 200 );
+dibujarLinea ("black", 90, 200 , 80, 200 );
+dibujarLinea ("black", 80, 200 , 70, 190 );
+dibujarLinea ("black", 120, 200 , 130, 190 );
+
+function dibujarLinea(color,xinicial,yinicial,xfinal,yfinal)
+{
+ lienzo.beginPath();
+ lienzo.strokeStyle = "color";
+ lienzo.moveTo(xinicial, yinicial);
+ lienzo.lineTo(xfinal, yfinal);
+ lienzo.stroke();
+ lienzo.closePath(); 
+}

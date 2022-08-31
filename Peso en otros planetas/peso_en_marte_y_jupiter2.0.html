@@ -1,0 +1,35 @@
+<html>
+  <head>
+   <title>Peso planetario</title>   
+  </head>
+    <body>
+      <h1>Mide tu peso en diferentes planetas</h1>
+      <p>El peso difiere en distintos planetas; veamos tu peso en jupiter y marte.</p>
+      <script>
+       var usuario = prompt ("Cual es tu peso ?");
+       var planeta = parseInt(prompt ("Elije el planeta\n 1 es marte , 2 es jupiter"));
+       var peso = parseInt(usuario);
+       var g_tierra = 9.8;
+       var g_marte = 3.7;
+       var g_jupiter = 24.8;
+       var peso_planetario;
+       if (planeta == 1)
+       {
+        peso_planetario = peso * g_marte / g_tierra;
+        peso_planetario = parseInt(peso_planetario);
+        document.write ("Tu peso en marte <strong> es " + peso_planetario + "</strong> Kilos");
+       }
+       else if (planeta == 2)
+       {
+         peso_planetario = peso * g_jupiter / g_tierra;
+         peso_planetario = parseInt(peso_planetario);
+         document.write ("Tu peso en Jupiter <strong> es " + peso_planetario + "</strong> Kilos");
+       }
+       else 
+       {
+         peso_planetario = 10000000000 ;
+         document.write ("Tu peso en Kripton <strong> es" + peso_planetario + "</strong> Kilos");
+       }
+      </script>
+    </body>
+</html>
